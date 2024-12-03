@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AnimalCrossingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.ListFish">
+            <summary>
+            Retrieves a list of all fish, including their availability information.
+            </summary>
+            <returns>A list of fish with detailed information.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.GetFishByName(System.String)">
+            <summary>
+            Searches for fish by name, supporting partial name matches.
+            </summary>
+            <param name="name">The name or partial name of the fish to search for.</param>
+            <returns>A list of fish that match the search criteria.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.CreateFish(AnimalCrossingAPI.Models.CreateFishDto)">
+            <summary>
+            Creates a new fish entry in the database.
+            </summary>
+            <param name="createFishDto">The data containing details about the new fish.</param>
+            <returns>The created fish with its generated identifier.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.UpdateFishAvailability(System.Int32,AnimalCrossingAPI.Models.FishAvailabilityUpdateDto)">
+            <summary>
+            Updates the availability information of an existing fish.
+            </summary>
+            <param name="id">The unique identifier of the fish to update.</param>
+            <param name="updateDto">The data containing availability information to update.</param>
+            <returns>A confirmation of successful update or an error if the fish is not found.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.UpdateFish(System.Int32,AnimalCrossingAPI.Models.FishUpdateDto)">
+            <summary>
+            Updates details of an existing fish (excluding availability information).
+            </summary>
+            <param name="id">The unique identifier of the fish to update.</param>
+            <param name="updateDto">The data containing updated fish details.</param>
+            <returns>A confirmation of successful update or an error if the fish is not found.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.GetFishBelowPrice(System.Int32)">
+            <summary>
+            Retrieves a list of fish with prices below the specified amount.
+            </summary>
+            <param name="price">The maximum price to filter fish by.</param>
+            <returns>A list of fish where the price is below the specified amount.</returns>
+        </member>
+        <member name="M:AnimalCrossingAPI.Controllers.FishController.GetFishByLocation(System.String)">
+            <summary>
+            Retrieves a list of fish based on their availability location.
+            </summary>
+            <param name="location">The location to filter fish by.</param>
+            <returns>A list of fish available in the specified location.</returns>
+        </member>
+        <member name="T:AnimalCrossingAPI.Migrations.initial">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:AnimalCrossingAPI.Migrations.updatefishModel">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.updatefishModel.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.updatefishModel.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:AnimalCrossingAPI.Migrations.updatefishModel.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
